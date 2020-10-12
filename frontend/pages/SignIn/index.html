@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assina Rápido</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #dad7d7;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .login-form {
+            padding: 5px 15px;
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 80%;
+            align-items: center;
+            background-color: #FFF;
+            border-radius:  10px;
+            box-shadow: #00000075 2px 3px;
+
+        }
+
+        .login-form label {
+            left: 0;
+            margin: 10px 0;
+
+        }
+        .login-form  input {
+            margin-top: 15px;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+
+        .login-form button {
+            width: 250px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .login-form span a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <form class="login-form">
+            <label for="name">
+                Seu nome:
+            </label>
+            <input type="text" id="name" required>
+            <label for="company">
+                Nome da sua empresa:
+            </label>
+            <input type="text" id="company" required>
+            <label for="email">
+                Seu email:
+            </label>
+            <input type="email" id="email" required>
+            <label for="password">
+                Sua senha:
+            </label>
+            <input type="password" id="password" required>
+            <label for="passwordTMP">
+                Repita sua senha:
+            </label>
+            <input type="password" id="passwordTMP" required>
+            <button type="submit">Entrar</button>
+            <span>
+                Já está cadastrado?
+                <a href="/login">Realize seu login</a>
+            </span>
+        </form>
+    </div>
+</body>
+</html>

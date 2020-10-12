@@ -11,6 +11,9 @@
             outline: none;
             box-sizing: border-box;
         }
+        body {
+            background-color: #dad7d7;
+        }
         .main-content {
             display: flex;
             justify-content: center;
@@ -25,22 +28,29 @@
             width: 40%;
             height: 80%;
             align-items: center;
+            background-color: #FFF;
+            border-radius:  10px;
+            box-shadow: #00000075 2px 3px;
+
         }
 
         .login-form label {
             margin: 10px 0;
 
         }
-        .login-form label input {
+        .login-form  input {
             margin-top: 15px;
             border: none;
             border-bottom: 1px solid #000;
         }
-        
+
         .login-form button {
             width: 250px;
             margin-top: 10px;
             margin-bottom: 10px;
+        }
+        .login-form span a {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -48,13 +58,13 @@
     <div class="main-content">
         <form class="login-form">
             <label for="email">
-                Seu email:<br>
-                <input type="email" id="email" required>
+                Seu email:
             </label>
+            <input type="email" id="email" required>
             <label for="password">
-                Sua senha:<br>
-                <input type="password" id="password" required>
+                Sua senha:
             </label>
+            <input type="password" id="password" required>
             <button type="submit">Entrar</button>
             <span>
                 Não tem um login ainda?
