@@ -1,13 +1,13 @@
 const express = require('express')
+const { verifyToken } = require('./config/JWTultils')
+const ClientLoginController = require('./controllers/ClientLoginController')
+const CompanyLoginController = require('./controllers/CompanyLoginController')
 
 const routes = express.Router()
 
-// Rotas do cliente
-
-
-// Rotas da Empresa
-routes.get('/', () => {})
-routes.post('/companies', () => {})
-routes.post('/companies/:company/add-subscription', () => {})
-routes.get('/companies/:company/clients', () => {})
-routes.get('/', () => {})
+routes.post('company/login', CompanyLoginController)
+routes.post('client/login', ClientLoginController)
+routes.post('/companies', verifyToken, () => {})
+routes.post('/companies/:company_id/add-subscription', verifyToken, () => {})
+routes.get('/companies/:company_id/finances', verifyToken, () => {})
+routes.get('/companies/:company_id/clients', verifyToken, () => {})
