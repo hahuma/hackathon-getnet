@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assina Rápido</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .login-form {
+            padding: 5px 15px;
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 80%;
+            align-items: center;
+        }
+
+        .login-form label {
+            margin: 10px 0;
+
+        }
+        .login-form label input {
+            margin-top: 15px;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+        
+        .login-form button {
+            width: 250px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <form class="login-form">
+            <label for="email">
+                Seu email:<br>
+                <input type="email" id="email" required>
+            </label>
+            <label for="password">
+                Sua senha:<br>
+                <input type="password" id="password" required>
+            </label>
+            <button type="submit">Entrar</button>
+            <span>
+                Não tem um login ainda?
+                <a href="/sigin">Cadastre-se</a>
+            </span>
+        </form>
+    </div>
+</body>
+</html>
