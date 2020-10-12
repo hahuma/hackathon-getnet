@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #dad7d7;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.login-form {
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 80%;
+    align-items: center;
+    background-color: #FFF;
+    border-radius:  10px;
+    box-shadow: #00000075 2px 3px;
+
+}
+
+.login-form label {
+    margin: 10px 0;
+
+}
+.login-form  input {
+    margin-top: 15px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.login-form button {
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.login-form span a {
+    text-decoration: none;
+}
+
+.main-content .header {
+    background-color: #40dd40;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+}
+.main-content .header h1{
+    text-shadow: white 2px 1px 2px;
+}
+
+.main-content .header .nav-bar {
+    display: flex;
+    width: 25%;
+}
+
+
+.main-content .header .nav-bar a {
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    margin-right: 30px;
+    justify-self: center;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.main-content .header .nav-bar a:hover {
+    background-color: #36b936;
+}
+
+.main-content aside {
+    background-color: #FFF;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.main-content aside table {
+    margin-top: 10px;
+    border: none;
+}
+.main-content aside table td{
+    padding: 15px;
+}

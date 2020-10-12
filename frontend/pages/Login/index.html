@@ -3,60 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assina Rápido</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            outline: none;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: #dad7d7;
-        }
-        .main-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            height: 100vh;
-        }
-        .login-form {
-            padding: 5px 15px;
-            display: flex;
-            flex-direction: column;
-            width: 40%;
-            height: 80%;
-            align-items: center;
-            background-color: #FFF;
-            border-radius:  10px;
-            box-shadow: #00000075 2px 3px;
-
-        }
-
-        .login-form label {
-            margin: 10px 0;
-
-        }
-        .login-form  input {
-            margin-top: 15px;
-            border: none;
-            border-bottom: 1px solid #000;
-        }
-
-        .login-form button {
-            width: 250px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .login-form span a {
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="../../global.css">
+    <title>Assinei</title>
 </head>
 <body>
     <div class="main-content">
-        <form class="login-form">
+        <form class="login-form" action="../Dashboard/index.html">
             <label for="email">
                 Seu email:
             </label>
@@ -65,10 +17,10 @@
                 Sua senha:
             </label>
             <input type="password" id="password" required>
-            <button type="submit">Entrar</button>
+            <button href="../Dashboard/index.html" type="submit">Entrar</button>
             <span>
                 Não tem um login ainda?
-                <a href="/sigin">Cadastre-se</a>
+                <a href="../SignIn/index.html">Cadastre-se</a>
             </span>
         </form>
     </div>

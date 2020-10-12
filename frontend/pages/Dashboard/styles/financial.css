@@ -1,0 +1,25 @@
+.main-content .financial-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 70%;
+    padding: 15px;
+}
+
+.main-content .financial-container section {
+    background-color: #FFF;
+    padding: 10px;
+    box-shadow: #dbd9d9 4px 3px;
+    width: 300px;
+    height: 400px;
+    border-radius: 7px;
+    margin: 20px 0;
+}
+
+.main-content .financial-container section h1 {
+    margin-bottom: 30px;
+}
+
+.expected-income, .minimum-income {
+    justify-self: center;
+}
